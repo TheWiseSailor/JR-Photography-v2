@@ -26,7 +26,7 @@ body {
 }
 
 /* Media query for screens below 1000px */
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .questions1 {
     flex-direction: column;
     align-items: flex-start;
