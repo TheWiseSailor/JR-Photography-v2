@@ -9,3 +9,30 @@ body {
 .container {
   flex: 1;
 }
+/* Default styling for larger screens */
+.questions1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 44px;
+  padding-right: 32px;
+  margin-left: 32px;
+}
+
+/* Media query for screens below 1000px */
+@media (max-width: 1000px) {
+  .questions1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .questions {
+    margin-top: 16px;
+  }
+}
