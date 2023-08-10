@@ -57,20 +57,3 @@ Default styling for larger screens .questions1 {
   opacity: 1;
   transform: translateX(0);
 }
-.flex-1 {
-  flex: 1;
-  text-align: center;
-  position: relative;
-  margin: 20px;
-  overflow: hidden;
-}
-
-.flex-1 img {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s;
-}
-
-.flex-1:hover img {
-  transform: scale(1.05);
-}
