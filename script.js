@@ -8,19 +8,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-window.addEventListener("load", () => {
-  setTimeout(() => {
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
     const aboutMe = document.querySelector(".about-me");
     aboutMe.classList.add("active");
-  }, 1000);
+  } else {
+    const meSection = document.querySelector(".me");
+    meSection.classList.add("active");
+  }
+
+  lastScrollTop = scrollTop;
 });
+
 window.addEventListener("load", () => {
   setTimeout(() => {
     const meSection = document.querySelector(".me");
     meSection.classList.add("active");
-  }, 1000);
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const slideDiv = document.querySelector(".slide-left");
-  slideDiv.classList.add("translate-x-0");
+  }, 3000);
 });
