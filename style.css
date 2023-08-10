@@ -9,8 +9,7 @@ body {
 .container {
   flex: 1;
 }
-/* Default styling for larger screens */
-.questions1 {
+Default styling for larger screens .questions1 {
   display: flex;
   justify-content: center;
   align-items: center;
