@@ -8,3 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const aboutMe = document.querySelector(".about-me");
+    aboutMe.classList.add("active");
+  }, 1000);
+});
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const meSection = document.querySelector(".me");
+    meSection.classList.add("active");
+  }, 1000);
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const slideDiv = document.querySelector(".slide-left");
+  slideDiv.classList.add("translate-x-0");
+});
