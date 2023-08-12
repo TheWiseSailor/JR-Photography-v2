@@ -35,7 +35,16 @@ Default styling for larger screens .questions1 {
     margin-top: 16px;
   }
 }
+.contacts {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
 
+.contacts.active {
+  opacity: 1;
+  transform: translateX(0);
+}
 .me {
   opacity: 0;
   transform: translateY(20px);
