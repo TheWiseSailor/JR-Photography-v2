@@ -12,7 +12,7 @@ document.addEventListener("scroll", () => {
       meSection.classList.add("active");
     }
 
-    lastScrollTop = scrollTop;
+    // lastScrollTop = scrollTop;
   }, 2000);
 });
 
